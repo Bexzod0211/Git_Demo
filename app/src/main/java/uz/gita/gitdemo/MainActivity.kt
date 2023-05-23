@@ -10,6 +10,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         makeToast("Hello")
+        val st:String = "World!"
+        if (st == "World!"){
+            makeToast(st)
+        }
     }
 
     fun makeToast(message: String) {
