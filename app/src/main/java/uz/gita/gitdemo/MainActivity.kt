@@ -10,10 +10,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         makeToast("Hello")
+        Log.d("GGG", "onCreate: my log")
     }
 
     fun makeToast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
-        Log.d("TTT",message)
+        Log.d("TTT", message)
     }
 }
